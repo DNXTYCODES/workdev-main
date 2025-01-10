@@ -1,0 +1,27 @@
+.submit-btn{
+    background-color: #ff6600;
+}
+
+.submit-btn:hover{
+    background-color: transparent;
+    border-color: #ff6600;
+    color: #ff6600;
+}
+
+.contact2 {
+    font-size: 18px;
+    color: #666; /* Neutral tone for non-primary content */
+    margin: 5px 0;
+  }
+  
+  /* Email and Phone Styling */
+  .contact2 div h1:first-of-type {
+    font-weight: normal;
+  }
+
+  
+  .contact2 div h1:last-of-type {
+    color: #333; /* Highlight phone number for emphasis */
+    font-weight: bold;
+  }
+  

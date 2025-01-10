@@ -1,0 +1,67 @@
+/* Mission Section Styles */
+.mission-section {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 60px 20px; /* Padding for spacing */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mission-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap; /* Allows stacking on smaller screens */
+  }
+  
+  /* Image Section */
+  .mission-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+  }
+  
+  /* Text Section */
+  .mission-text {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .mission-text h2 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .mission-text p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .mission-text p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .mission-container {
+      flex-direction: column; /* Stacks the image and text vertically */
+      gap: 20px;
+      text-align: center;
+    }
+  
+    .mission-text {
+      max-width: 100%;
+    }
+  
+    .mission-image img {
+      max-width: 100%;
+    }
+  }
+  

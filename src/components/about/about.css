@@ -1,0 +1,48 @@
+/* General Layout */
+.about {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;  /* Light background color */
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Heading Styles */
+  .about h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Content Container */
+  .about div {
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;  /* White background for content */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;  /* Justified text alignment for better readability */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about {
+      padding: 20px;
+    }
+  
+    .about h1 {
+      font-size: 2em;
+    }
+  
+    .about div {
+      font-size: 1em;
+      padding: 15px;
+    }
+  }
+  

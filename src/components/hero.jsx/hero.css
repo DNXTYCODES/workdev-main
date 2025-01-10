@@ -1,0 +1,131 @@
+/* General Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Header Section */
+  .header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .header .logo img {
+    width: 80px;
+    height: auto;
+  }
+  
+  .hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .cta-btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-btn:hover {
+    background-color: #e55b00;
+  }
+  
+  /* Services Section */
+  .services {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .loan-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .loan-card {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+  }
+  
+  .loan-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .loan-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* Get Pre-approved Section */
+  .get-pre-approved {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .get-pre-approved h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  /* Footer Section */
+  .footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-content p {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .loan-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .loan-card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    .cta-btn {
+      font-size: 16px;
+      padding: 12px 25px;
+    }
+  }
+  

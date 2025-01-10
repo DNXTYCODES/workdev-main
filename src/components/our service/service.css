@@ -1,0 +1,101 @@
+/* General Styling for the Service Component */
+.service {
+    font-family: 'Arial', sans-serif; /* Clean font */
+    max-width: 800px; /* Center content and maintain readability */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for better readability */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .servHead{
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  /* Main Heading Styling */
+  .service h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333; /* Darker color for contrast */
+    text-align: center; /* Center align headings */
+  }
+  
+  /* Subheadings */
+  .service h2 {
+    font-size: 22px;
+    color: #555; /* Neutral color */
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Form Container Styling */
+  .service div {
+    margin-bottom: 20px; /* Add space between sections */
+  }
+  
+  /* Buttons */
+  .service button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Calculate Button */
+  .service button:last-of-type {
+    background-color: #ff6600; /* Blue */
+    color: #fff;
+  }
+  
+  /* Clear Button */
+  .service button:first-of-type {
+    background-color: #ff6600; /* Red */
+    color: #fff;
+    
+  }
+
+  .service button:first-of-type:hover {
+    background-color: transparent; /* Red */
+    color: #ff6600; 
+  }
+
+  .service button:last-of-type:hover {
+    background-color: transparent; /* Blue */
+    color: #ff6600;
+  }
+
+  
+  /* Button Hover Effect */
+  .service button:hover {
+    opacity: 0.9;
+  }
+  
+  
+  /* Contact Information */
+  .service div h1 {
+    font-size: 18px;
+    color: #666; /* Neutral tone for non-primary content */
+    margin: 5px 0;
+  }
+  
+  /* Email and Phone Styling */
+  .service div h1:first-of-type {
+    font-weight: normal;
+  }
+
+  
+  .service div h1:last-of-type {
+    color: #333; /* Highlight phone number for emphasis */
+    font-weight: bold;
+  }
+  

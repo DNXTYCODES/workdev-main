@@ -1,0 +1,215 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  margin-top: 55px;
+}
+
+/* .HE (Header Text) */
+.HE {
+  font-size: 1.2em;
+  color: #FFFFFF;
+}
+
+/* Top Column (Email and Location) */
+.topColumn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0px;
+  font-size: 14px;
+  background-color: #071221;
+  color: #FFFFFF;
+  position: fixed; /* Fix the top column */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 40px;
+  z-index: 10; /* Ensure it stays on top of other content */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: top 0.3s ease-in-out;
+}
+
+.topColumn h1 {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.topColumn svg {
+  margin-right: 0px;
+}
+
+.mail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mail h1 {
+  margin-left: 100px;
+  color: #ff6600;
+}
+
+.mail h2 {
+  margin-left: 10px;
+}
+
+.loc {
+  display: flex;
+}
+
+.loc h1 {
+  margin-left: 100px;
+  margin-top: 0px;
+}
+
+.loc h2 {
+  margin-right: 133px;
+}
+
+/* Main container (below the fixed header) */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa; /* Light background */
+  color: #333;
+  border-bottom: 2px solid #ff6600; /* Accent color for a polished look */
+  padding: 20px 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+  margin-top: 80px; /* Space for the fixed header */
+}
+
+/* Logo and Branding */
+.logo {
+  width: 60px; /* Set the width for the logo */
+  height: 60px; /* Ensure the height is consistent with the width */
+  background-color: #ff6600; /* Orange background */
+  border-radius: 50%; /* Round logo */
+  margin-right: 20px;
+}
+
+.logo img {
+  width: 100%; /* Ensure the logo image takes up full width of the container */
+  height: 100%; /* Ensure the height matches the width */
+  object-fit: cover; /* Keep the aspect ratio of the logo image */
+}
+
+/* Branding text */
+.container h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.container h2 {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 5px;
+}
+
+.nav-links a:hover {
+  color: #ff6600;
+  border-bottom: 2px solid #ff6600; /* Underline effect */
+}
+
+/* Ensure content below the header is scrollable */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 20px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  /* Top Column adjustments */
+  .topColumn {
+    flex-direction: column; /* Stack the elements vertically */
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  .mail, .loc {
+    margin-bottom: 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  /* Logo styling for smaller screens */
+  .logo {
+    width: 50px; /* Make logo smaller */
+    height: 50px;
+  }
+
+  .logo img {
+    width: 100%; /* Ensure the logo fits */
+    height: 100%;
+  }
+
+  .container h1 {
+    font-size: 24px; /* Smaller font size for branding */
+  }
+
+  .container h2 {
+    font-size: 16px; /* Smaller font size for tagline */
+  }
+
+  /* Navbar adjustments */
+  .navbar {
+    width: 100%; /* Full width for navbar */
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack navbar items vertically */
+    gap: 15px;
+    text-align: center;
+  }
+
+  .nav-links a {
+    font-size: 14px; /* Smaller font size for mobile */
+  }
+}

@@ -1,0 +1,68 @@
+/* Vision Section Styles */
+.vision-section {
+    background-color: #eef2f5; /* Subtle light background */
+    padding: 60px 20px; /* Padding for spacing */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .vision-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap; /* Allows stacking on smaller screens */
+    flex-direction: row-reverse; /* Places the image on the right */
+  }
+  
+  /* Text Section */
+  .vision-text {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .vision-text h2 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .vision-text p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .vision-text p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Image Section */
+  .vision-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .vision-container {
+      flex-direction: column; /* Stacks the image and text vertically */
+      gap: 20px;
+      text-align: center;
+    }
+  
+    .vision-text {
+      max-width: 100%;
+    }
+  
+    .vision-image img {
+      max-width: 100%;
+    }
+  }
+  

@@ -1,0 +1,150 @@
+/* Footer Styles */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    position: relative; /* Allow scrolling and avoid it being fixed */
+    width: 100%;
+    bottom: 0;
+  }
+  
+  /* Footer container */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  /* Footer sections */
+  .footer-about,
+  .footer-links,
+  .footer-contact,
+  .footer-social {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  /* Footer heading styles */
+  h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #ecf0f1;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #bdc3c7;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  ul li a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  ul li a:hover {
+    color: #ecf0f1;
+  }
+  
+  /* Footer links hover effect */
+  .footer-contact a,
+  .footer-about a {
+    color: #bdc3c7;
+    text-decoration: none;
+  }
+  
+  .footer-contact a:hover,
+  .footer-about a:hover {
+    color: #ecf0f1;
+  }
+  
+  /* Social media section styles */
+  .footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    color: #bdc3c7;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #ecf0f1;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #7f8c8d;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-about,
+    .footer-links,
+    .footer-contact {
+      margin-bottom: 20px;
+    }
+  
+    .social-icons {
+      justify-content: center;
+    }
+  }
+  
+  /* Ensure the footer is not static but still sticks to the bottom of the content */
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Content that extends beyond the screen height */
+  main {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+  }
+  
+  footer {
+    margin-top: auto; /* Pushes the footer down if the content is not enough */
+  }
+  

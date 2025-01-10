@@ -1,0 +1,85 @@
+/* Global Form Styles */
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  form h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 30px;
+  }
+  
+  label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+  }
+  
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #ff6600;
+    background-color: #fff5e6;
+  }
+  
+  textarea {
+    height: 120px;
+    resize: vertical;
+  }
+  
+  button {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff6600;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+  }
+  
+  button:hover {
+    background-color: #e55b00;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    form {
+      padding: 20px;
+    }
+  
+    form h2 {
+      font-size: 28px;
+    }
+  
+    form button {
+      font-size: 16px;
+      padding: 12px;
+    }
+  }
+  
